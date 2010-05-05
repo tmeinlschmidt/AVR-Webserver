@@ -43,8 +43,8 @@
 #include <avr/pgmspace.h>
 #include <avr/interrupt.h>
 
-#include "..\config.h"
-#include "..\usart.h"
+#include "../config.h"
+#include "../usart.h" //changed \ to / for linux
 #include "enc28j60.h"
 
 #if USE_ENC28J60
