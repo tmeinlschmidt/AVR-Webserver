@@ -108,7 +108,7 @@
 									//	 Kamera ist dann an der anderen Schnittstelle
 	
 /** LCD ***************/
-	#define USE_SER_LCD		1		//!< LCD Routinen mit einbinden
+	#define USE_SER_LCD		0		//!< LCD Routinen mit einbinden
 	#define USE_LCD_4Bit	0		//!< LCD im 4Bit Mode oder seriell
 
 /** ADC ***************/
@@ -160,8 +160,8 @@
 	#define DOS_LIST		1		//!< DOS style Directory-Listing
 	//#define UNIX_LIST		1
 	#define FTP_ANONYMOUS	1		//!< anonymen Login (ohne User/Kennwort) erlauben
-	#define FTP_USER		"chef"	//!< FTP-User, falls nicht anonym
-	#define FTP_PASSWORD	"123"	//!< FTP-Passwort
+	#define FTP_USER		""	//!< FTP-User, falls nicht anonym
+	#define FTP_PASSWORD	""	//!< FTP-Passwort
 
 	// don't touch!
 	#ifdef DOS_LIST
@@ -193,7 +193,7 @@
     #define CMD_TELNET      	0			//!< Kommandos und Ausgaben erfolgen über Telnet (Port 23)
 
 /** Infrarot Fernbedienung **/
-	#define USE_RC5				1
+	#define USE_RC5				0
 	#define	RC5_DDR				DDRC		//!< IR input port Data Direction Register
 	#define	RC5_INPORT			PINC		//!< IR input port
 	#define	RC5_PIN				PC5			//!< \port PC5 - IR input pin
